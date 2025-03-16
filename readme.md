@@ -13,3 +13,15 @@ archive file containing 30 json files. [source](https://www.kaggle.com/datasets/
 
 ## Key Deliverables:
 -	Apache Spark code.
+
+## Important steps for the approach:
+- connecting to mysql by mysql-connector-j-8.0.33.jar and run this code 
+[spark = SparkSession.builder \
+    .appName("MySQL Integration") \
+    .config("spark.jars", "mysql-connector-j-8.0.33.jar")]
+
+- creating .env file which has my db_password
+
+- using some small tests to check the code during the process
+
+- trying to get the solution using data definition language
